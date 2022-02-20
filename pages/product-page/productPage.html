@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b1debee41.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://turboui.netlify.app/components/components.css">
+    <link rel="stylesheet" href="./productPage.css">
+    <title>CREMECH | PRODUCT PAGE</title>
+</head>
+<body>
+    
+    <div class="wrapper grid-layout">
+
+        <header class="header">
+
+            <nav class="nav__container">
+
+                <div class="nav__heading">
+
+                    <a href="../../index.html">
+                        <div class="nav__title">
+                            CREMECH
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="nav__user__icons">
+
+                    <span class="material-icons-outlined nav__icon"> 
+                        person_outline 
+                    </span>
+                    
+                    <span class="material-icons-outlined nav__icon">
+                        logout
+                    </span>
+
+                    <div class="badge-icons">
+                        <span class="material-icons-outlined nav__icon"> 
+                            favorite_border
+                            <span class="notification visible">8</span>
+                        </span>
+                    </div>
+
+                    <div class="badge-icons">
+                        <span class="material-icons-outlined nav__icon"> 
+                            shopping_cart 
+                            <span class="notification visible">4</span>
+                        </span>
+                    </div>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <aside class="filter">
+
+            <div class="filter__section">
+                <h2>
+                    Filters
+                </h2> 
+                <button class="btn btn-outl-primary clear-btn"></i> CLEAR </button>
+            </div>
+
+            <div class="price__section">
+                <h2>Price</h2>
+                <div class="slider__container">
+                    <div class="slider__prices">
+                        <div>5K</div>
+                        <div class="space">10K</div>
+                        <div>20K</div>
+                    </div>
+                    <div class="slider">
+                        <input type="range" name="price-range" id="price-range" min="5000" max="20000">
+                    </div>
+                </div>
+            </div>
+
+            <div class="category__section">
+                <h2>Catergories</h2>
+                <div class="catergories">
+
+                    <article>
+                        <input type="checkbox" class="checkbox-inp" value="brushes"> 
+                        <label for="brushe">Brushes</label>
+                    </article>
+
+                    <article>
+                        <input type="checkbox" class="checkbox-inp" value="brushes">
+                        <span>Car Wash</span>
+                    </article>
+
+                    <article>
+                        <input type="checkbox" class="checkbox-inp" value="brushes">
+                        <span>Microfiber Cloth</span>
+                    </article>
+
+                    <article>
+                        <input type="checkbox" class="checkbox-inp" value="brushes">
+                        <span>Engine Oils</span>
+                    </article>
+
+                    <article>
+                        <input type="checkbox" class="checkbox-inp" value="brushes">
+                        <span>Chassis</span>
+                    </article>
+
+                    <article>
+                        <input type="checkbox" class="checkbox-inp" value="brushes">
+                        <span>Valvotronic Exhausts</span>
+                    </article>
+                </div>
+            </div>
+
+            <div class="rating__section">
+                <h2>Ratings</h2>
+                <div class="ratings">
+
+                    <article>
+                        <input type="radio" class="radio-inp" value="4star" name="rating">
+                        <span>4 Stars & above</span>
+                    </article>
+
+                    <article>
+                        <input type="radio" class="radio-inp" value="3star" name="rating">
+                        <span>3 Stars & above</span>
+                    </article>
+
+                    <article>
+                        <input type="radio" class="radio-inp" value="2star" name="rating">
+                        <span>2 Stars & above</span>
+                    </article>
+
+                    <article>
+                        <input type="radio" class="radio-inp" value="1star" name="rating">
+                        <span>1 Stars & above</span>
+                    </article>
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- Product cards -->
+        <section class="content">
+
+            <div class="content__heading">
+                <h2>
+                    Showing all categories
+                    <span class="subtitle">(15 products)</span>
+                </h2> 
+            </div>
+
+            <div class="products__card">
+
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-brushes.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">3.0</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Cleaning Brushes</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-microfiber-cloth.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.5</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Microfiber Cloth</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-wash-shampoo.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">3.8</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Cleaning Brushes</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/engine-oil-2.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.1</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Nexton Engine Oil</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 5 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/chassis.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.8</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Chassis + Wheels</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-microfiber-cloth.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.5</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Microfiber Cloth</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-wash-shampoo.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">3.8</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Cleaning Brushes</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/chassis.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.8</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Chassis + Wheels</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-brushes.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">3.0</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Cleaning Brushes</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-microfiber-cloth.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.5</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Microfiber Cloth</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-wash-shampoo.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">3.8</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Cleaning Brushes</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 4 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/chassis.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.8</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Chassis + Wheels</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- card 1 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-brushes.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">3.0</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Cleaning Brushes</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/car-microfiber-cloth.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.5</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Microfiber Cloth</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="card">
+                    <div class="card__img-container">
+                       <img src="../../assets/chassis.png" alt="hoodie img" class="card__img">
+                        <span class="card__img-badge">4.8</span>
+                    </div>
+                 
+                    <div class="card-info">
+                        <div class="heading-like">
+                            <div class="card-heading">
+                                <h2>Car Chassis + Wheels</h2>
+                                <p> PK </p>
+                            </div>
+                          <i class="far fa-heart like"></i>
+                        </div>
+                 
+                        <div class="card-pricing">
+                            <div class="offer-pricing"> ₹839 </div>
+                            <div class="actual-pricing"> ₹1199 </div>
+                            <div class="discount-percentange"> 30% off </div>
+                        </div>
+                 
+                        <div class="add-cart-btn">
+                            <button class="add-cart">
+                               <span>
+                                   <i class="fas fa-shopping-cart"></i>
+                                </span>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
