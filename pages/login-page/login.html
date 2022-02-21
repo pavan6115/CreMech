@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/6b1debee41.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://turboui.netlify.app/components/components.css">
+    <link rel="stylesheet" href="./login.css">
+    <title>CREMECH | LOGIN</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <header class="header">
+
+            <nav class="nav__container">
+
+                <div class="nav__heading">
+
+                    <a href="../../index.html">
+                        <div class="nav__title">
+                            CREMECH
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="nav__user__icons">
+
+                    <span class="material-icons-outlined nav__icon"> 
+                        person_outline 
+                    </span>
+                    
+                    <span class="material-icons-outlined nav__icon">
+                        logout
+                    </span>
+                    
+                    <span class="material-icons-outlined nav__icon">
+                        favorite_border
+                    </span>
+
+                    <span class="material-icons-outlined nav__icon"> 
+                        shopping_cart 
+                    <span>
+
+                </div>
+
+            </nav>
+
+        </header>
+
+
+        <section class="login">
+
+            <div class="illustration__container">
+
+                <img src="../../assets/login-img.svg" alt="login-svg" class="login__illustration">
+
+            </div>
+
+            <form action="">
+                <div class="login__container">
+    
+                    <div class="login__heading">
+                        <h1 class="login__heading__title">Login</h1>
+                        <span class="login__heading__subtitle">PAGE</span>
+                    </div>
+    
+                    <div class="login__form__container">
+                        
+                        <div class="username__container">
+                            <label for="username">Username : </label>
+                            <input type="text" name="username" id="username" class="txt-input" placeholder="Enter username" autocomplete="off" required>
+                        </div>
+    
+                        <div class="password__container">
+                            <label for="username">Password : </label>
+                            <input type="password" name="password" id="password" class="txt-input" placeholder="Enter password" required>
+                            <span class="material-icons-outlined eye-icon">
+                                visibility_off
+                            </span>
+                        </div>
+    
+                        <div class="rememberme__container">
+                            <article>
+                                <input type="checkbox" name="rme" id="rme" class="checkbox-inp"> Remember me
+                            </article>
+                        </div>
+    
+                        <div class="login__button__container">
+                                <button class="login__btn">
+                                    Login
+                                </button>
+                        </div>
+    
+                        <div class="forgot__password">
+                            <button class="btn btn-link">
+                                <a href="../forgotPassword-page/forgotPassword.html" class="btn-link link__txt">Forgot Password</a>
+                            </button>  
+                        </div>
+    
+                        <div class="redirect__signup">
+                            <button class="btn btn-link">
+                                <a href="../signup-page/signup.html" class="btn-link link__txt">Don't have Account? Signup</a>
+                            </button>  
+                        </div>
+    
+                    </div>
+                </div>
+            </form>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
