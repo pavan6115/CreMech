@@ -163,3 +163,6 @@ body {
     background-color: rgba(242, 134, 39, 0.726);
 }
 
+a {
+    color: var(--primary-color);
+}
