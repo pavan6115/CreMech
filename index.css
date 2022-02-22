@@ -273,3 +273,8 @@ body {
     font-size: 1.125rem;
     color: #350000;
 }
+
+
+a {
+    color: var(--primary-color);
+}
