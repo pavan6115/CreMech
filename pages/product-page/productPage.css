@@ -195,3 +195,7 @@ article {
     color: red;
     font-weight: 900;
 }
+
+a {
+    color: var(--primary-color)
+}
