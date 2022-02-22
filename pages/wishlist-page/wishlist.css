@@ -151,3 +151,7 @@ body {
 .redirect__cart__btn:hover {
     background-color: rgba(242, 92, 5, 0.774);
 }
+
+a {
+    color: var(--primary-color)
+}
