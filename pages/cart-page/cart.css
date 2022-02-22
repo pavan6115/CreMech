@@ -172,6 +172,6 @@ body {
     font-size: 1.5rem;
 }
 
-.block {
-    display: block;
+a {
+    color: var(--primary-color)
 }
